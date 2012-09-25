@@ -172,7 +172,7 @@ module Consular
         pane_content  = panes[pane_key]
         pane_commands = pane_content[:commands]
 
-        vertical_split if first_pane
+        horizontal_split if first_pane
         execute_pane_commands(pane_commands,commands)
 
         if pane_content.key?(:panes)
